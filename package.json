@@ -65,7 +65,7 @@
   "gypfile": true,
   "binary": {
     "module_name": "mbgl",
-    "module_path": "./lib/{node_abi}/{platform}/{arch}",
+    "module_path": "./lib/{node_abi}/{platform}",
     "host": "https://mapbox-node-binary.s3.amazonaws.com",
     "remote_path": "./{name}/v{version}",
     "package_name": "{node_abi}-{platform}-{arch}-{configuration}.tar.gz"
