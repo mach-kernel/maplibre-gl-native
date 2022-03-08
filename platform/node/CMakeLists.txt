@@ -8,7 +8,7 @@ include(${PROJECT_SOURCE_DIR}/node_modules/@mapbox/cmake-node-module/module.cmak
 
 add_node_module(
     mbgl-node
-    INSTALL_PATH ${PROJECT_SOURCE_DIR}/lib/{node_abi}/mbgl.node
+    INSTALL_PATH ${PROJECT_SOURCE_DIR}/lib/{node_abi}/{platform}/{arch}/mbgl.node
     NAN_VERSION 2.14.2
     EXCLUDE_NODE_ABIS
         46
