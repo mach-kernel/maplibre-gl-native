@@ -6,9 +6,11 @@ endif()
 set(NODE_MODULE_CACHE_DIR ${CMAKE_SOURCE_DIR}/build/headers)
 include(${PROJECT_SOURCE_DIR}/node_modules/@mapbox/cmake-node-module/module.cmake)
 
+string(TOLOWER ${CMAKE_SYSTEM_NAME} CMAKE_SYSTEM_NAME)
+
 add_node_module(
     mbgl-node
-    INSTALL_PATH ${PROJECT_SOURCE_DIR}/lib/{node_abi}/{platform}/{arch}/mbgl.node
+    INSTALL_PATH ${PROJECT_SOURCE_DIR}/lib/{node_abi}/${CMAKE_SYSTEM_NAME}/mbgl.node
     NAN_VERSION 2.14.2
     EXCLUDE_NODE_ABIS
         46

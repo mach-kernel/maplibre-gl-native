@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM sitespeedio/node:ubuntu-20.04-nodejs-14.17.6
 
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
